@@ -1,0 +1,15 @@
+{
+    "name": "georgie/laravel-feie-printer",
+    "autoload": {
+        "psr-4": {
+            "Georgie\\LaravelFeiePrinter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Georgie",
+            "email": "227040015@qq.com"
+        }
+    ],
+    "require": {}
+}
