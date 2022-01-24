@@ -1,6 +1,6 @@
 <?php
 
-namespace georgie\laravelFeiePrinter;
+namespace georgie\LaravelFeiePrinter;
 
 class HttpClient {
     // Request vars
@@ -17,12 +17,12 @@ class HttpClient {
     var $user_agent = 'Incutio HttpClient v0.9';
     var $timeout = 20;
     var $use_gzip = true;
-    var $persist_cookies = true; 
-    var $persist_referers = true; 
+    var $persist_cookies = true;
+    var $persist_referers = true;
     var $debug = false;
-    var $handle_redirects = true; 
+    var $handle_redirects = true;
     var $max_redirects = 5;
-    var $headers_only = false;    
+    var $headers_only = false;
     var $username;
     var $password;
     var $status;
@@ -101,7 +101,7 @@ class HttpClient {
                     $this->debug($this->errormsg);
                     return false;
                 }
-                $http_version = $m[1]; 
+                $http_version = $m[1];
                 $this->status = $m[2];
                 $status_string = $m[3];
                 $this->debug(trim($line));
@@ -174,7 +174,7 @@ class HttpClient {
     }
     function buildRequest() {
         $headers = array();
-        $headers[] = "{$this->method} {$this->path} HTTP/1.0"; 
+        $headers[] = "{$this->method} {$this->path} HTTP/1.0";
         $headers[] = "Host: {$this->host}";
         $headers[] = "User-Agent: {$this->user_agent}";
         $headers[] = "Accept: {$this->accept}";
@@ -229,7 +229,7 @@ class HttpClient {
         $url = 'https://'.$this->host;
         if ($this->port != 80) {
             $url .= ':'.$this->port;
-        }            
+        }
         $url .= $this->path;
         return $url;
     }
@@ -303,7 +303,7 @@ class HttpClient {
             }
             print '</div>';
         }
-    }   
+    }
 }
 
 ?>
