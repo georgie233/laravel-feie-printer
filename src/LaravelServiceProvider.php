@@ -10,11 +10,10 @@ class LaravelServiceProvider extends ServiceProvider
     {
         //配置文件
         echo '123';
-        $url = __DIR__.'/dis/feie_printer.php';
-        $url2 = config_path('feiE.php');
-        $content = file_get_contents($url);
-        is_dir($url2) or mkdir($url2);
-        file_put_contents($url2,$content);
+        $configPath = __DIR__ . '/dis/feie_printer.php';
+        $this->publishes([
+            $configPath => config_path('feiE.php'),
+        ]);
     }
 
     /**
@@ -24,8 +23,6 @@ class LaravelServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('laravelFeiePrinter', function () {
-            return new Provider();
-        });
+
     }
 }

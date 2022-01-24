@@ -1,5 +1,25 @@
 {
     "name": "georgie/laravel-feie-printer",
+    "description": "laravel feie printer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "georgie",
+            "email": "227040015@qq.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "\\Georgie\\laravelFeiePrinter\\LaravelServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {},
     "autoload": {
         "psr-4": {
             "Georgie\\LaravelFeiePrinter\\": "src/"
@@ -10,6 +30,5 @@
             "name": "Georgie",
             "email": "227040015@qq.com"
         }
-    ],
-    "require": {}
+    ]
 }
