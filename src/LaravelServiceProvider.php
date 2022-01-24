@@ -10,9 +10,8 @@ class LaravelServiceProvider extends ServiceProvider
     {
         //配置文件
         echo '123';
-        $configPath = __DIR__ . '/dis/feie_printer.php';
         $this->publishes([
-            $configPath => config_path('feiE.php'),
+            __DIR__ . '/dis/feie_printer.php' => config_path('feiE.php'),
         ]);
     }
 
