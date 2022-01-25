@@ -27,10 +27,10 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
@@ -59,10 +59,10 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
@@ -88,11 +88,11 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             //服务器返回的JSON字符串，建议要当做日志记录起来
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
@@ -117,11 +117,11 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             //服务器返回的JSON字符串，建议要当做日志记录起来
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
@@ -142,10 +142,10 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
@@ -170,10 +170,10 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
@@ -195,10 +195,10 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
@@ -219,10 +219,10 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
@@ -245,10 +245,10 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
@@ -269,10 +269,10 @@ class FeiePrinter
         ];
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
-            echo 'error';
+            return false;
         } else {
             $result = $client->getContent();
-            echo $result;
+            return json_decode($result);
         }
     }
 
