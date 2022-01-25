@@ -62,7 +62,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result,true);
+             return json_decode($result,true);
         }
     }
 
@@ -92,7 +92,7 @@ class FeiePrinter
         } else {
             //服务器返回的JSON字符串，建议要当做日志记录起来
             $result = $client->getContent();
-            return json_decode($result,true);
+             return json_decode($result,true);
         }
     }
 
@@ -121,7 +121,7 @@ class FeiePrinter
         } else {
             //服务器返回的JSON字符串，建议要当做日志记录起来
             $result = $client->getContent();
-            return json_decode($result,true);
+             return json_decode($result,true);
         }
     }
 
@@ -145,7 +145,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result,true);
+             return json_decode($result,true);
         }
     }
 
@@ -156,7 +156,7 @@ class FeiePrinter
      * @param  [string] $phonenum [打印机流量卡号码,可以不传参,但是不能为空字符串]
      * @return [string]           [接口返回值]
      */
-    public static function printerEdit($sn, $name, $phonenum)
+    public static function printerEdit($sn, $name, $phonenum = false)
     {
         $time = time();         //请求时间
         $msgInfo = [
@@ -166,14 +166,14 @@ class FeiePrinter
             'apiname' => 'Open_printerEdit',
             'sn' => $sn,
             'name' => $name,
-            'phonenum' => $phonenum,
         ];
+        if ($phonenum)$msgInfo['phonenum'] = $phonenum;
         $client = new HttpClient(config('feiE.ip'), config('feiE.port'));
         if (!$client->post(config('feiE.path'), $msgInfo)) {
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result,true);
+             return json_decode($result,true);
         }
     }
 
@@ -198,7 +198,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result,true);
+             return json_decode($result,true);
         }
     }
 
@@ -222,7 +222,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result,true);
+             return json_decode($result,true);
         }
     }
 
@@ -248,7 +248,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result,true);
+             return json_decode($result,true);
         }
     }
 
@@ -272,7 +272,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result,true);
+             return json_decode($result,true);
         }
     }
 
