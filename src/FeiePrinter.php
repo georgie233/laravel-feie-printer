@@ -30,7 +30,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
@@ -62,7 +62,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
@@ -92,7 +92,7 @@ class FeiePrinter
         } else {
             //服务器返回的JSON字符串，建议要当做日志记录起来
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
@@ -121,7 +121,7 @@ class FeiePrinter
         } else {
             //服务器返回的JSON字符串，建议要当做日志记录起来
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
@@ -145,7 +145,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
@@ -173,7 +173,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
@@ -198,7 +198,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
@@ -222,7 +222,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
@@ -248,7 +248,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
@@ -272,7 +272,7 @@ class FeiePrinter
             return false;
         } else {
             $result = $client->getContent();
-            return json_decode($result);
+            return json_decode($result,true);
         }
     }
 
