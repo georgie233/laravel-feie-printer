@@ -1,6 +1,6 @@
 <?php
 
-namespace Georgie\FeiePrinter;
+namespace Georgie\LaravelFeiePrinter;
 
 use Illuminate\Support\ServiceProvider;
 

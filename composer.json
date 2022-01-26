@@ -14,7 +14,7 @@
         },
         "laravel": {
             "providers": [
-                "\\Georgie\\FeiePrinter\\LaravelServiceProvider"
+                "\\Georgie\\LaravelFeiePrinter\\LaravelServiceProvider"
             ]
         }
     },
@@ -22,7 +22,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Georgie\\FeiePrinter\\": "src/"
+            "Georgie\\LaravelFeiePrinter\\": "src/"
         }
     },
     "authors": [

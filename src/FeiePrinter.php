@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Georgie\FeiePrinter;
+namespace Georgie\LaravelFeiePrinter;
 
 
 class FeiePrinter
