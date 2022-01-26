@@ -1,6 +1,6 @@
 <?php
 
-namespace georgie\LaravelFeiePrinter;
+namespace georgie\FeiePrinter;
 
 class HttpClient {
     // Request vars
